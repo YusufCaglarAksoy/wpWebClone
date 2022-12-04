@@ -1,0 +1,389 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box !important;
+    font-family: 'Nunito', sans-serif !important;
+}
+.fab, .fa-brands {
+    font-family: 'Font Awesome 6 Brands' !important;
+    font-weight: 400;
+}
+body{
+    margin: 0;
+    --purple : #bc5cf0;
+    --orange : #f39800;
+    --color3 : #E0B4F8;
+    --color4 : #FFFAC7;
+    --color5 : #78FFD6;
+    --gradient :linear-gradient(180deg,#8d91ec,#cc7ee1 52.08%,#fc7a7a);
+    background-color: white;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.shill-container{
+    max-width: 1640px;
+    margin: auto;
+    display: block;
+}
+.shill-button{
+    padding: 8px 36px;
+    border-radius: 50px;
+    transition: 400ms all;
+    position: relative;
+    overflow: hidden;
+}
+.shill-button::before,
+.shill-button::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    height: 100%;
+    top: 0;
+    transition: 400ms all;
+    left: -40px;
+    z-index: 55;
+}
+.shill-button:hover::before{
+    left:10px;
+}
+.shill-button:hover::after{
+    left: calc(100% - 40px);
+}
+header{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 61px 0;
+}
+header .headerLogo svg{
+    height: 80px;
+    margin-left: -12px;
+}
+header ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+header ul li a{
+    font-weight: 600;
+    color: black;
+    transition: 400ms all;
+}
+header ul li a:hover{
+    color: var(--purple);
+}
+header .headerButtons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+header .headerButtons a:first-child{
+    background: linear-gradient(180deg,#8d91ec,var(--purple) 52.08%,#fc7a7a);
+    color: white;
+}
+header .headerButtons a:last-child{
+    border: 1px solid var(--purple);;
+    color: var(--purple);
+}
+
+header .headerButtons a:first-child::before,
+header .headerButtons a:first-child::after{
+    background: #ffffff30;
+}
+header .headerButtons a:last-child::before,
+header .headerButtons a:last-child::after{
+    content: none;
+}
+header .headerButtons a:last-child:hover{
+    background-color: var(--purple);
+    color: white;
+}
+.entrace{
+    height: calc(100vh - 228px);
+    position: relative;
+}
+.entrace::before{
+    content: "";
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    opacity: .8;
+    z-index: -1;
+    background-image: radial-gradient(var(--color5), 40%, white 70%);
+    bottom: -100px;
+    left: -300px;
+}
+.entrace::after{
+    content: "";
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    opacity: 1;
+    z-index: -1;
+    background-image: radial-gradient(var(--orange), 50%, white 71%);
+    bottom: -140px;
+    right: -300px;
+}
+.entrace .entrace-inner{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.entrace .entrace-inner .entrace-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.entrace .entrace-inner .entrace-texts h1{
+    color: var(--purple);
+    letter-spacing: -1px;
+    font-size: 80px;
+    font-weight: 800;
+}
+.entrace .entrace-inner .entrace-texts p{
+    font-size: 22px;
+    font-weight: 600;
+}
+.entrace .entrace-inner .entrace-buttons{
+    display: flex;
+    gap: 30px;
+}
+.entrace .entrace-inner div a:first-child{
+    background: linear-gradient(180deg,#8d91ec,var(--purple) 52.08%,#fc7a7a);
+    color: white;
+}
+.entrace .entrace-inner div a:last-child{
+    border: 1px solid black;;
+    color: black;
+}
+
+.entrace .entrace-inner div a:first-child::before,
+.entrace .entrace-inner div a:first-child::after{
+    background: #ffffff30;
+}
+.entrace .entrace-inner div a:last-child::before,
+.entrace .entrace-inner div a:last-child::after{
+    content: none;
+}
+.entrace .entrace-inner div a:last-child:hover{
+    background-color: black;
+    color: white;
+}
+.how-use-user{
+    height: 100vh;
+    padding: 60px 0;
+}
+.how-use-user .how-use-user-top{
+    display: flex;
+    height: 50%;
+}
+.how-use-user .how-use-user-top a{
+    width: 50%;
+    position: relative;
+}
+.how-use-user .how-use-user-top a:before{
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    opacity: .8;
+    z-index: -1;
+    background-image: radial-gradient(var(--purple), 35%, white 70%);
+    bottom: -50px;
+    left: -100px;
+}
+.how-use-user .how-use-user-top a h6{
+    font-size: 20px;
+    margin: 0;
+    color: black;
+    letter-spacing: -1px;
+}
+.how-use-user .how-use-user-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 55%;
+    font-weight: 200;
+    height: 50%;
+    font-size: 17px;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+.how-use-user .how-use-user-text h5{
+    font-size: 28px;
+    margin: 0;
+    font-weight: 200;
+    color: var(--orange);
+}
+.how-use-user .how-use-user-text h3{
+    font-size: 45px;
+    margin: 0;
+}
+.how-use-user .how-use-user-text p{
+    margin: 0;
+}
+.how-use-user .how-use-user-text .how-use-user-buttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.how-use-user .how-use-user-text .how-use-user-buttons a{
+    margin: auto;
+}
+.how-use-user .how-use-user-text .how-use-user-buttons a:first-child{
+    background: linear-gradient(180deg,#d59ef2,#bc5cf0);
+    color: white;
+}
+.how-use-user .how-use-user-text .how-use-user-buttons a:last-child{
+    border: 1px solid var(--purple);
+    color: var(--purple);
+}
+
+.how-use-user .how-use-user-text .how-use-user-buttons a:first-child::before,
+.how-use-user .how-use-user-text .how-use-user-buttons a:first-child::after{
+    background: #ffffff30;
+}
+.how-use-user .how-use-user-text .how-use-user-buttons a:last-child::before,
+.how-use-user .how-use-user-text .how-use-user-buttons a:last-child::after{
+    content: none;
+}
+.how-use-user .how-use-user-text .how-use-user-buttons a:last-child:hover{
+    background-color: var(--purple);
+    color: white;
+}
+.how-use-user-2{
+    height: 100vh;
+}
+.how-use-user-2>div{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    height: 50%;
+    position: relative;
+}
+.how-use-user-2>div div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.how-use-user-2>div div h4 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 100;
+}
+.how-use-user-2>div div  p {
+    margin: 0;
+    font-weight: 600;
+}
+.how-use-user-2>div div  a {
+    font-size: 15px;
+    color: var(--purple);
+    font-weight: 100;
+}
+.how-use-user-2>div.how-use-user-top div{
+    margin-right: auto;
+}
+.how-use-user-2>div.how-use-user-bottom img{
+    order: 2;
+}
+.how-use-user-2>div.how-use-user-bottom div{
+    order: 1;
+}
+.how-use-user-2>div.how-use-user-top:before{
+    content: "";
+    position: absolute;
+    height: 550px;
+    width: 550px;
+    opacity: 1;
+    z-index: -1;
+    background-image: radial-gradient(var(--orange), 35%, white 71%);
+    bottom: -50px;
+    left: -350px;
+}
+.how-use-user-2>div.how-use-user-bottom:before{
+    content: "";
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    opacity: 1;
+    z-index: -1;
+    background-image: radial-gradient(var(--purple), 35%, white 71%);
+    bottom: 0px;
+    right: calc((-1640px * .3) - 200px);
+}
+footer{
+    background-image: linear-gradient(0deg ,transparent 50%,rgba(218,254,255,.802) 90%);
+    padding: 60px 0;
+}
+footer .footer-top{
+    display: flex;
+    margin-bottom: 120px;
+}
+footer .footer-top div{
+    width: 50%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+footer .footer-top div h4{
+    margin: 0;
+    font-size: 26px;
+    font-weight: 100;
+}
+footer .footer-top div p{
+    margin: 0;
+    font-weight: 100;
+}
+footer .footer-top div p b{
+    font-weight: 400;
+}
+footer .footer-top div a{
+    background: linear-gradient(180deg,#d59ef2,#bc5cf0);
+    margin: 0;
+    color: white;
+    width: max-content;
+}
+footer .footer-top div a::before,
+footer .footer-top div a::after{
+    background: #ffffff30;
+}
+footer .footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .footer-bottom .footerLogo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #000000a1;
+}
+footer .footer-bottom ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+footer .footer-bottom ul a{
+    color: #000000a1;
+    transition: 400ms all; 
+}
+footer .footer-bottom ul a:hover{
+    color: black;
+}
+footer .footer-bottom .footerSocial{
+    gap: 35px;
+    display: flex;
+}
+footer .footer-bottom .footerSocial i{
+    font-size: 32px;
+    color: var(--purple);
+}

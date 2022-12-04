@@ -1,0 +1,14 @@
+@media only screen and (max-width:1650px){
+    .shill-container{
+        max-width: 95%;
+    }
+    main section.profiles .section-header .options{
+        height: calc((((100vw * .95) * 0.95) - 100px) / 6);
+    }
+    main section {
+        width: 95%;
+    }
+    main section.packages .packages-left .packages-left-left{
+        padding: 30px 20px;
+    }
+}

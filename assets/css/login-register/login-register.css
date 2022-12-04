@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box !important;
+    font-family: 'Nunito', sans-serif !important;
+}
+html{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+.sign-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10vh 0;
+}
+.sign-left .sign-left-top{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.sign-left .sign-left-top img{
+    object-fit: contain;
+}
+.sign-left .sign-left-top h3{
+    color: #BC5CF0;
+    font-size: 32px;
+    margin: 0;
+}
+.sign-left .sign-left-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 400px;
+    width: 100%;
+}
+.sign-left .sign-left-center .head-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign-left .sign-left-center .head-div h4{
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+.sign-left .sign-left-center .head-div p{
+    margin: 0;
+    color: #A7A8BB;
+    font-weight: 500;
+}
+.sign-left .sign-left-center .head-div p a{
+    color: #3699FF;
+    font-weight: 700;
+}
+.sign-left .sign-left-center .input-div{
+    display: flex;
+    flex-direction: column;
+}
+.sign-left .sign-left-center>div{
+    width: 100%;
+}
+.sign-left .sign-left-center .input-div label{
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.sign-left .sign-left-center .input-div input{
+    background-color: #EEF1F5;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+.sign-left .sign-left-center .input-div div{
+    display: flex;
+    justify-content: space-between;
+}
+.sign-left .sign-left-center .input-div div a{
+    color: #3699FF;
+    font-weight: 700;
+}
+.sign-left .sign-left-center button{
+    background: #464E5F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.sign-left .sign-left-bottom {
+
+}
+.sign-left .sign-left-bottom button{
+    background-color: #E1F0FF;
+    color: #3699FF;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+.sign-left .sign-left-bottom button i{
+    font-family: 'Font Awesome 6 Pro' !important;
+    font-size: 18px;
+}
+.sign-left .sign-left-bottom button img{
+    width: 20px;
+    height: 20px;
+}
+.sign-right{
+    background: linear-gradient(180deg, #D59EF2 0%, #BC5CF0 100%);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.sign-right h1{
+    width: 75%;
+    color: white;
+    font-size: 5vw;
+    line-height: 5vw;
+    margin: 0;
+}
+.sign-right img{
+    width: 85%;
+}
+
+.sign-left.register{
+    padding: 10vh 5%;
+}
+.sign-left.register .sign-left-top{
+    width: 100%;
+    justify-content: start;
+}
+.sign-left.register .register-steps{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.sign-left.register .register-steps>i{
+    font-family: 'Font Awesome 6 Pro' !important;
+    font-weight: 400;
+    color: #B5B5C3;
+    font-size: 25px;
+}
+.sign-left.register .register-steps .step{
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: 15px;
+}
+.sign-left.register .register-steps .step .step-statu{
+    background-color: #F3F6F9;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.sign-left.register .register-steps .step .step-statu h2{
+    color: #B5B5C3;
+    margin: 0;
+}
+.sign-left.register .register-steps .step .step-statu i{
+    color: #8950FC;
+    display: none;
+}
+.sign-left.register .register-steps .step.completed .step-statu{
+    background-color: #EEE5FF;
+}
+.sign-left.register .register-steps .step.completed .step-statu h2{
+    display: none;
+}
+.sign-left.register .register-steps .step.completed .step-statu i{
+    display: block;
+    font-family: 'Font Awesome 6 Pro' !important;
+}
+.sign-left.register .register-steps .step .step-text{
+    color: #B5B5C3;
+}
+.sign-left.register .register-steps .step .step-text h4{
+    margin: 0;
+    font-size: 18px;
+}
+.sign-left.register .register-steps .step.now .step-text h4{
+    color: black;
+}
+.sign-left.register .register-steps .step .step-text span{
+    font-size: 14px;
+}
+.sign-left .sign-left-center.register {
+    align-items: flex-start;
+    max-width: 100%;
+}
+.sign-left .sign-left-center.register .head-div {
+    align-items: flex-start;
+}
+.sign-left .sign-left-center.register .two-input{
+    display: flex;
+    gap: 30px;
+}
+.sign-left .sign-left-center.register .two-input .input-div{
+   width: 100%;
+}
+.sign-left .sign-left-bottom.register {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.sign-left .sign-left-bottom.register button {
+    background-color: #EEE5FF;
+    color: #9663FC;
+}
+.sign-left .sign-left-bottom.register button i{
+    font-family: 'Font Awesome 6 Pro' !important;
+    font-size: 18px;
+}
+.sign-left .sign-left-bottom.register button:last-child {
+    background-color: #8950FC;
+    color: white;
+}
+.sign-left .sign-left-center.register .two-input.verify{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.sign-left .sign-left-center.register .two-input.verify>div{
+    display: flex;
+    gap: 50px;
+}
+.sign-left .sign-left-center .two-input.verify label{
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.sign-left .sign-left-center.register .two-input.verify .input-div{
+    width: calc(((100vw * 0.4) - 150px) / 4);
+    height: calc(((100vw * 0.4) - 150px) / 4);
+}
+.sign-left .sign-left-center .two-input.verify .input-div input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 5vw;
+}
